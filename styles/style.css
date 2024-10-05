@@ -1,0 +1,11 @@
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  font-size: 16px;
+  line-height: 20px;
+  border: red 2px dotted;
+}
+
+body {
+  background-color: rgb(225, 235, 231);
+}
