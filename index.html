@@ -18,29 +18,124 @@
       rel="stylesheet"
     />
   </head>
-
+  <!-- Comienza a crear la Composición   ENCABEZADOS aquí -->
   <body>
     <div class="page">
+      <!-- Creamos el bloque HEADER (Encabezado de la pagina-->
       <header class="header">
-        <h1>Iniciando mi pagina desde cero</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quae
-          veniam, corrupti corporis porro officia voluptatum voluptates
-          explicabo commodi fuga necessitatibus molestiae dolores consectetur
-          rerum incidunt! Doloremque eos quis sapiente!
-        </p>
+        <!-- Creamos el bloque NAV de (navegacion de la pagina)-->
+        <nav class="nav">
+          <div class="log">
+            <img
+              src="./images/logo_coffeeshop_dark.svg"
+              class="logo"
+              alt="Logo Coffeeshop"
+            />
+          </div>
+          <div>
+            <ul class="nav_links">
+              <li><a href="#recipes" class="nav_link">Resetas</a></li>
+
+              <li class="nav_link">
+                <a>Reservar una mesa</a>
+              </li>
+              <li class="nav_link">
+                <a>Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Aqui empezamos a crear el bloque HEADER_CONTEN (contenido de del Encabezado) #5 AL 8-->
+
+        <div class="header__contents">
+          <div class="header__content">
+            <div>
+              <h1 class="header__title">
+                <span class="span-accent">Café de especialidad</span>en Triple
+                Peaks
+              </h1>
+            </div>
+
+            <p class="header__description">
+              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+              café para darte energía y motivar tu creatividad.
+            </p>
+          </div>
+
+          <img
+            src="images/inside_coffee_shop.png"
+            alt="coffeeshop"
+            class="header__image"
+          />
+        </div>
+
+        <!-- Aqui empezamos a crear el bloque HEADER_FOOTER (contenido de del  FOOTER) #8 Y 9-->
+        <div class="header__footer">
+          <ul class="header__footer-Informations">
+            <li class="header__footer-Information">Horario:</li>
+            <li class="header__footer-Information">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </li>
+            <li class="header__footer-Information">
+              Sábados y Domingos (de 11:00h a 18:00h)
+            </li>
+          </ul>
+          <p class="paragraph">Avenida del Éxito 200, Ciudad Triple Peaks</p>
+        </div>
       </header>
-    </div>
 
-    <div class="page">
-      <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
+      <!-- Aqui empezamos a crear el bloque MAIN (seccion resetas) #1,2-->
+      <main>
+        <section class="recipes" id="recipes">
+          <!-- Bloque #1 titulo-->
+          <div class="recipes__title"><h2>Recetas</h2></div>
+
+          <!-- Bloque #2 Subtitulos-->
+          <div class="recipes__subtitle">
+            <p>
+              Echa un vistazo a las recetas que hemos reunido para que elabores
+              tus propios snacks.
+            </p>
+          </div>
+
+          <!-- Bloque #3 RECIPIENTES VIDEOS -->
+          <div class="recipes__videos">
+            <!-- Aqui se agrega contenidos del recipiente Videos (etiquetas  iframes de videos de Youtube  (bloque 4 y 5)-->
+            <div class="recipes__video-item">
+              <iframe
+                class="iframe"
+                width="480"
+                height="273"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=_VXJHAYPELUJDZRz"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p>Receta en Aeropress ~5 min</p>
+            </div>
+
+            <div class="recipes__iframe">
+              <iframe
+                class="iframe"
+                width="480"
+                height="273"
+                src="https://www.youtube.com/embed/st571DYYTR8?si=SShFxyJQxKhWLdPT"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p>Receta en cafetera francesa ~15 min</p>
+            </div>
+          </div>
+
+          <div class="recipes__video-caption"></div>
+        </section>
       </main>
-    </div>
-
-    <div class="page">
-      <footer class="footer"></footer>
     </div>
   </body>
 </html>

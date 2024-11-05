@@ -1,13 +1,200 @@
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  font-size: 16px;
-  font-family: "inter", "noto serif", Arial, Helvetica, sans-serif;
-  line-height: 20px;
-  margin: auto;
-  border: red 2px dotted;
+/* Estilos aplicados a toda la pagina */
+body {
 }
 
-body {
-  background-color: rgb(225, 235, 231);
+.page {
+  color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+
+  background-color: #ffffff;
+
+  /*valor predeterminado minimo ancho de una pagina en pantalla*/
+  min-width: 1100px;
+
+  /*valor predeterminado para maximo ancho de una pagina pantalla*/
+  max-width: 1600px;
+
+  /*Tamano de letra promedio usados como valor predeterminado */
+  font-size: 16px;
+
+  /*tipografia de letra usado en la pagina, descargado el link de google fond*/
+  font-family: "inter", "noto serif", Arial, Helvetica, sans-serif;
+
+  /* altura de la lineas donde esta las letras */
+  line-height: 20px;
+  margin: auto;
+}
+
+/* Estilos de la seccion   ENCABEZADOS aquí*/
+
+/*Comienzo a crear los Estilos  HEADER_NAV (barra de navegacion del ENCABEZADOS) aquí*/
+
+.header {
+  border: solid green 5px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 80px;
+  background-color: rgb(183, 224, 248);
+}
+.nav_links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  border: dashed red 1px;
+  background-color: rgb(150, 211, 247);
+}
+
+.nav_link {
+  color: black;
+}
+.logo {
+  width: 105px;
+  height: 39px;
+  border: dashed red 1px;
+}
+
+/*Comienza a crear los Estilos  HEADER_CONTENT (Contenido del Encabezado) aquí*/
+
+.header__contents {
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  position: relative;
+  padding-right: 5px;
+  padding-left: 80px;
+  background-color: rgb(215, 251, 241);
+  border: red dashed 2px;
+}
+
+.header__title {
+  color: black;>
+  max-width: 709px;
+  margin-top: 183px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 1px;
+  background-color: rgb(153, 254, 220);
+}
+
+.span-accent {
+  font-family: noto serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 72px;
+  color: #2f80ed;
+}
+
+.header__description {
+  color: black;
+  max-width: 683px;
+  font-family: noto serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: rgb(65, 236, 179);
+}
+
+.header__image {
+  width: 646px;
+  height: 568px;
+  margin-top: 124px;
+  background-color: rgb(203, 252, 235);
+}
+
+/*Estilos  HEADER_FOOTER (Footer del ecabezado) aquí*/
+.header__footer {
+  padding-bottom: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  background-color: rgb(254, 254, 208);
+}
+.header__footer-Informations {
+  list-style-type: none;
+  border: solid green 2px;
+}
+.paragraph {
+  display: flex;
+  align-items: flex-end;
+  border: solid green 2px;
+}
+
+/*SECCION RECETAS */
+/* Estilos para los BLOQUE RECIPES */
+
+.recipes {
+  background-color: #0a2750;
+  background-image: url(../images/background_recipes.svg);
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-bottom: 215px;
+  padding-left: 80px;
+}
+
+.recipes__title {
+  max-width: 580px;
+  margin-bottom: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  border: solid rgb(20, 191, 28) 2px;
+}
+
+.recipes__subtitle {
+  max-width: 438px;
+  border: solid rgb(20, 191, 28) 2px;
+  margin-bottom: 80px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.recipes__videos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  border: solid rgb(20, 191, 28) 2px;
+}
+
+.recipes__video-item {
+}
+
+.iframe {
 }
