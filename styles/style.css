@@ -31,62 +31,58 @@ body {
 /*Comienzo a crear los Estilos  HEADER_NAV (barra de navegacion del ENCABEZADOS) aquí*/
 
 .header {
-  border: solid green 5px;
+  background-color: #ffffff;
 }
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 80px;
-  background-color: rgb(183, 224, 248);
+  position: relative;
 }
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 105px;
+  height: 39px;
+  z-index: 10;
+}
+
 .nav_links {
   list-style-type: none;
+  position: absolute;
+  top: 30px;
+  right: 80px;
   display: flex;
-  justify-content: flex-start;
   gap: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  border: dashed red 1px;
-  background-color: rgb(150, 211, 247);
+  z-index: 10;
 }
 
 .nav_link {
   color: black;
-}
-.logo {
-  width: 105px;
-  height: 39px;
-  border: dashed red 1px;
+  list-style-type: none;
 }
 
 /*Comienza a crear los Estilos  HEADER_CONTENT (Contenido del Encabezado) aquí*/
 
-.header__contents {
+.header__content {
   background-image: url(../images/background_header.svg);
   background-size: cover;
-  display: flex;
-  justify-content: space-between;
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
   position: relative;
-  padding-right: 5px;
-  padding-left: 80px;
-  background-color: rgb(215, 251, 241);
-  border: red dashed 2px;
 }
 
 .header__title {
-  color: black;>
+  color: black;
   max-width: 709px;
+  position: absolute;
+  left: 80px;
   margin-top: 183px;
-  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
@@ -95,7 +91,6 @@ body {
   font-size: 58px;
   line-height: 72px;
   letter-spacing: 1px;
-  background-color: rgb(153, 254, 220);
 }
 
 .span-accent {
@@ -110,26 +105,27 @@ body {
 .header__description {
   color: black;
   max-width: 683px;
+  position: absolute;
+  top: 424px;
+  left: 80px;
   font-family: noto serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  background-color: rgb(65, 236, 179);
 }
 
 .header__image {
   width: 646px;
   height: 568px;
-  margin-top: 124px;
-  background-color: rgb(203, 252, 235);
+  position: absolute;
+  top: 124px;
+  right: 5px;
 }
 
 /*Estilos  HEADER_FOOTER (Footer del ecabezado) aquí*/
 .header__footer {
-  padding-bottom: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -138,17 +134,20 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: black;
-  background-color: rgb(254, 254, 208);
+  color: #6f6f6f;
 }
 .header__footer-Informations {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
   list-style-type: none;
-  border: solid green 2px;
 }
 .paragraph {
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
   display: flex;
   align-items: flex-end;
-  border: solid green 2px;
 }
 
 /*SECCION RECETAS */
@@ -171,12 +170,11 @@ body {
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  border: solid rgb(20, 191, 28) 2px;
 }
 
 .recipes__subtitle {
   max-width: 438px;
-  border: solid rgb(20, 191, 28) 2px;
+
   margin-bottom: 80px;
   font-family: "Noto Serif";
   font-style: normal;
@@ -190,7 +188,6 @@ body {
   display: flex;
   gap: 40px;
   justify-content: center;
-  border: solid rgb(20, 191, 28) 2px;
 }
 
 .recipes__video-item {
