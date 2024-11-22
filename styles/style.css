@@ -59,7 +59,7 @@ body {
   z-index: 10;
 }
 
-.nav_links {
+.nav__links {
   list-style-type: none;
 
   display: flex;
@@ -72,7 +72,7 @@ body {
   z-index: 10;
 }
 
-.nav_link {
+.nav__link {
   color: black;
   list-style-type: none;
 }
