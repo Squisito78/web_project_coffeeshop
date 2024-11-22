@@ -2,6 +2,7 @@
 body {
 }
 
+/*Estilos  para PAGE (caracteristicas iniciales y base de la página) aquí*/
 .page {
   color: #fff;
   background-image: url(../images/background_header.svg);
@@ -28,19 +29,31 @@ body {
 
 /* Estilos de la seccion   ENCABEZADOS aquí*/
 
-/*Comienzo a crear los Estilos  HEADER_NAV (barra de navegacion del ENCABEZADOS) aquí*/
+/*Estilos  HEADER (caracteristicas iniciales y base del Encabezado) aquí*/
 
 .header {
   background-color: #ffffff;
-}
-.nav {
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*Estilos para NAV (Contenido del menu de Navegación del Encabezado) aquí*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 80px;
+  padding-left: 30px;
 }
 
 .logo {
-  position: absolute;
-  top: 30px;
-  left: 30px;
   width: 105px;
   height: 39px;
   z-index: 10;
@@ -48,9 +61,7 @@ body {
 
 .nav_links {
   list-style-type: none;
-  position: absolute;
-  top: 30px;
-  right: 80px;
+
   display: flex;
   gap: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -66,25 +77,13 @@ body {
   list-style-type: none;
 }
 
-/*Comienza a crear los Estilos  HEADER_CONTENT (Contenido del Encabezado) aquí*/
-
-.header__content {
-  background-image: url(../images/background_header.svg);
-  background-size: cover;
-  height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
-  position: relative;
-}
+/*Estilos para HEADER (Contenido del Encabezado) aquí*/
 
 .header__title {
-  color: black;
+  color: #2f80ed;
   max-width: 709px;
-  position: absolute;
-  left: 80px;
+  padding-left: 80px;
   margin-top: 183px;
-  display: flex;
-  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -105,9 +104,9 @@ body {
 .header__description {
   color: black;
   max-width: 683px;
-  position: absolute;
-  top: 424px;
-  left: 80px;
+  margin-top: 28px;
+  padding-left: 80px;
+
   font-family: noto serif;
   font-style: normal;
   font-weight: normal;
@@ -123,29 +122,26 @@ body {
   right: 5px;
 }
 
-/*Estilos  HEADER_FOOTER (Footer del ecabezado) aquí*/
+/*Estilos para  HEADER_FOOTER (Footer del ecabezado) aquí*/
+
 .header__footer {
-  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   font-family: inter;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
+
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: auto;
 }
-.header__footer-Informations {
-  position: absolute;
-  bottom: 40px;
-  left: 80px;
+.header__footer-informations {
   list-style-type: none;
 }
 .paragraph {
-  position: absolute;
-  right: 80px;
-  bottom: 40px;
   display: flex;
   align-items: flex-end;
 }
