@@ -146,7 +146,7 @@ body {
   line-height: 20px;
   color: #838383;
 }
-.paragraph {
+.header__paragraph {
   display: flex;
   align-items: end;
 }
