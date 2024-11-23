@@ -33,7 +33,9 @@
           <div>
             <ul class="nav__links">
               <li><a href="#recipes" class="nav__link">Resetas</a></li>
-              <li><a href="#" class="nav__link">Reservar una mesa</a></li>
+              <li>
+                <a href="#reservation" class="nav__link">Reservar una mesa</a>
+              </li>
               <li><a href="#" class="nav__link">Contactos</a></li>
             </ul>
           </div>
@@ -58,15 +60,11 @@
 
         <!-- Aqui empezamos a crear el bloque HEADER_FOOTER (contenido de del  FOOTER) #8 Y 9-->
         <div class="header__footer">
-          <ul class="header__footer-informations">
-            <li class="header__footer-information">Horario:</li>
-            <li class="header__footer-information">
-              Lunes a Viernes (de 10:00h a 19:00h)
-            </li>
-            <li class="header__footer-information">
-              Sábados y Domingos (de 11:00h a 18:00h)
-            </li>
-          </ul>
+          <div class="header__footer-informations">
+            <p class="paragraph">Horario</p>
+            <p class="paragraph">Lunes a Viernes (de 10:00h a 19:00h)</p>
+            <p class="paragraph">Sábados y Domingos (de 11:00h a 18:00h)</p>
+          </div>
           <p class="paragraph">Avenida del Éxito 200, Ciudad Triple Peaks</p>
         </div>
       </header>
@@ -88,7 +86,7 @@
           <!-- Bloque #3 RECIPIENTES VIDEOS -->
           <div class="recipes__videos">
             <!-- Aqui se agrega contenidos del recipiente Videos (etiquetas  iframes de videos de Youtube  (bloque 4 y 5)-->
-            <div class="recipes__video-item">
+            <div class="recipes__iframe">
               <iframe
                 class="iframe"
                 width="480"
@@ -99,7 +97,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p>Receta en Aeropress ~5 min</p>
+              <p class="recipes__video-caption">Receta en Aeropress ~5 min</p>
             </div>
 
             <div class="recipes__iframe">
@@ -113,13 +111,13 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p>Receta en cafetera francesa ~15 min</p>
+              <p class="recipes__video-caption">
+                Receta en cafetera francesa ~15 min
+              </p>
             </div>
           </div>
-
-          <div class="recipes__video-caption"></div>
         </section>
-        <section class="reservation"></section>
+        <section class="reservation" id="reservation"></section>
       </main>
       <footer class="footer"></footer>
     </div>

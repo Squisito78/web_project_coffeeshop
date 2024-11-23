@@ -80,7 +80,7 @@ body {
 /*Estilos para HEADER (Contenido del Encabezado) aquí*/
 
 .header__title {
-  color: #2f80ed;
+  color: black;
   max-width: 709px;
   padding-left: 80px;
   margin-top: 183px;
@@ -139,11 +139,16 @@ body {
   margin-top: auto;
 }
 .header__footer-informations {
-  list-style-type: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
 }
 .paragraph {
   display: flex;
-  align-items: flex-end;
+  align-items: end;
 }
 
 /*SECCION RECETAS */
@@ -161,7 +166,7 @@ body {
 .recipes__title {
   max-width: 580px;
   margin-bottom: 24px;
-  font-family: "Inter";
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -172,7 +177,7 @@ body {
   max-width: 438px;
 
   margin-bottom: 80px;
-  font-family: "Noto Serif";
+  font-family: Noto Serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -184,6 +189,14 @@ body {
   display: flex;
   gap: 40px;
   justify-content: center;
+}
+
+.recipes__video-caption {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .recipes__video-item {
