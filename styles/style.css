@@ -38,8 +38,10 @@ body {
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
+  /* ulilizamos posicionamiento de elementos para poder reubicar nuestra imagen donque querramaos ulilzando las propiedade 
+  top, right,booton y left */
   position: relative;
-
+  /* ulilizamos flexbox, para acomodar y alinear nuestra caja que debido a la imagen (con propiedad Position), caja se desordeno*/
   display: flex;
   flex-direction: column;
 }
