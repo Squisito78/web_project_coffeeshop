@@ -38,10 +38,10 @@ body {
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
-  /* ulilizamos posicionamiento de elementos para poder reubicar nuestra imagen donque querramaos ulilzando las propiedade 
+  /* ulilizamos posicionamiento de elementos para poder reubicar nuestra imagen donde queramos ulilzando las propiedad
   top, right,booton y left */
   position: relative;
-  /* ulilizamos flexbox, para acomodar y alinear nuestra caja que debido a la imagen (con propiedad Position), caja se desordeno*/
+  /* ulilizamos flexbox, para acomodar y alinear nuestra caja que debido a la imagen (con propiedad Position), la caja se desordeno*/
   display: flex;
   flex-direction: column;
 }
@@ -205,4 +205,93 @@ body {
 }
 
 .iframe {
+}
+
+/*SECCION RESERVA */
+/* Estilos para los BLOQUE Reservar una mesa */
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-size: cover;
+  box-sizing: border-box;
+  color: #000;
+
+  padding-top: 100px;
+  padding-bottom: 120 px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__form {
+  display: flex;
+  /*max-width: ;*/
+  flex-direction: column;
+  max-width: 385px;
+  width: 385px;
+}
+
+.reservation__title {
+  display: flex;
+  justify-content: center;
+  /*max-width: 385px;
+  width: 385px;*/
+  margin-bottom: 80px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+
+.form__label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  height: 60px;
+  margin-bottom: 32px;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6f6f6f;
+}
+
+.form__button {
+  height: 60px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #2f80ed;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.button:hover {
+  border-radius: 4px;
 }
