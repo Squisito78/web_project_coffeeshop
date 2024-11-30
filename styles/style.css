@@ -234,7 +234,7 @@ body {
   justify-content: center;
   /*max-width: 385px;
   width: 385px;*/
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
 
   font-family: Inter;
   font-style: normal;
@@ -247,6 +247,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 120px;
+  border: none;
+  padding: 0;
 }
 
 .form__label {
@@ -258,7 +260,9 @@ body {
 }
 
 .form__input {
-  height: 60px;
+  /* height: 60px; */
+  padding-bottom: 15px;
+  padding-right: 20px;
   margin-bottom: 32px;
   padding-top: 15px;
   padding-left: 20px;
@@ -268,6 +272,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #6f6f6f;
+  box-sizing: border-box;
 }
 
 .form__button {
