@@ -1,0 +1,46 @@
+/*SECCION RECETAS */
+/* Estilos para los BLOQUE RECIPES */
+
+.recipes {
+  background-color: #0a2750;
+  background-image: url(../images/background_recipes.svg);
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-bottom: 215px;
+  padding-left: 80px;
+}
+
+.recipes__title {
+  max-width: 580px;
+  margin-bottom: 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.recipes__subtitle {
+  max-width: 438px;
+  margin-bottom: 80px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.recipes__videos {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.recipes__video-caption {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}

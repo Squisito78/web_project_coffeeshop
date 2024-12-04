@@ -1,0 +1,24 @@
+/*Estilos  para PAGE (caracteristicas iniciales y base de la página) aquí*/
+.page {
+  color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+
+  background-color: #ffffff;
+
+  /*valor predeterminado minimo ancho de una pagina en pantalla*/
+  min-width: 1100px;
+
+  /*valor predeterminado para maximo ancho de una pagina pantalla*/
+  max-width: 1600px;
+
+  /*Tamano de letra promedio usados como valor predeterminado */
+  font-size: 16px;
+
+  /*tipografia de letra usado en la pagina, descargado el link de google fond*/
+  font-family: "inter", "noto serif", Arial, Helvetica, sans-serif;
+
+  /* altura de la lineas donde esta las letras */
+  line-height: 20px;
+  margin: auto;
+}
