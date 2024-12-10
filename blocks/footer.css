@@ -1,0 +1,89 @@
+.footer {
+  background-color: #0a2850;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+}
+.footer__circle {
+  background-color: #2f80ed;
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  border-radius: 180px;
+  top: -128px;
+  left: -44px;
+}
+
+.footer__contents {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  position: relative;
+  border: dashed red 2px;
+}
+
+.footer__content-heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.footer__social-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link:hover {
+  color: #c1c1c1;
+}
+.footer__content_social {
+  border: dashed white 2px;
+}
+
+.footer__list {
+  list-style-type: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__copyright {
+  margin-top: 180px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  width: 105px;
+  height: 39px;
+  /*z-index: 3;*/
+}
+
+.footer__social-icon {
+  /* editando desde aqui */
+  width: 16px;
+  height: 16px;
+}
+
+.footer__copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 108px;
+  padding-bottom: 60px;
+}

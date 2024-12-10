@@ -1,3 +1,7 @@
+/*Asegúrate de importar normalize.css antes de cualquier otra sentencia @import. 
+De lo contrario, ¡anulará tus estilos personalizados!*/
+
+@import url("../vendor/normalize.css");
 @import url("../blocks/footer.css");
 @import url("../blocks/form.css");
 @import url("../blocks/header.css");

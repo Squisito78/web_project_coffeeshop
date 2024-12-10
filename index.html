@@ -8,7 +8,8 @@
     <meta name="keywords" content="html, css" />
     <title>Coffeeshop Triple Peaks</title>
     <link rel="shortcut" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <!--Se borra la etiqueta <link> para normalize.css, Ahora que la estás importando a index.css, esta etiqueta ya no es necesaria.-->
+
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +19,7 @@
       rel="stylesheet"
     />
   </head>
+
   <!-- Comienzo a crear    ENCABEZADOS aquí -->
   <body>
     <div class="page">
@@ -36,7 +38,7 @@
               <li>
                 <a href="#reservation" class="nav__link">Reservar una mesa</a>
               </li>
-              <li><a href="#" class="nav__link">Contactos</a></li>
+              <li><a href="#footer" class="nav__link">Contactos</a></li>
             </ul>
           </div>
         </nav>
@@ -44,7 +46,7 @@
         <!-- Aqui empezamos a crear el bloque HEADER_CONTEN (contenido de del Encabezado) #5 AL 8-->
 
         <h1 class="header__title">
-          <span class="span-accent">Café de especialidad</span>en Triple Peaks
+          <span class="span-accent">Café de especialidad</span> en Triple Peaks
         </h1>
 
         <p class="header__description">
@@ -178,7 +180,48 @@
           </form>
         </section>
       </main>
-      <footer class="footer"></footer>
+
+      <!--Seccion Footer-->
+      <footer class="footer" id="footer">
+        <div class="footer__circle"></div>
+
+        <div class="footer__contents">
+          <div class="footer__content">
+            <img
+              src="images/logo_coffeeshop_light.svg"
+              alt="Logo de Tripleten"
+              class="footer__logo"
+            />
+          </div>
+
+          <div class="footer__content footer__content_social">
+            <h3 class="footer__content-heading">Redes Sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item k">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    src="images/facebook_white.svg"
+                    alt="Logo de Facebook"
+                    class="footer__social-icon"
+                  />
+                  Ir a Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    src="images/instagram_white.svg"
+                    alt="Logo ee Instagran"
+                    class="footer__social-icon"
+                  />
+                  Ir a Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2024 Fidel Mariny</p>
+      </footer>
     </div>
   </body>
 </html>
