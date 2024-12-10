@@ -23,7 +23,6 @@
   justify-content: space-between;
   list-style-type: none;
   position: relative;
-  border: dashed red 2px;
 }
 
 .footer__content-heading {
@@ -44,9 +43,6 @@
 
 .footer__social-link:hover {
   color: #c1c1c1;
-}
-.footer__content_social {
-  border: dashed white 2px;
 }
 
 .footer__list {
