@@ -8,7 +8,6 @@
     <meta name="keywords" content="html, css" />
     <title>Coffeeshop Triple Peaks</title>
     <link rel="shortcut" href="favicon.ico" />
-    <!--Se borra la etiqueta <link> para normalize.css, Ahora que la estás importando a index.css, esta etiqueta ya no es necesaria.-->
 
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./pages/index.css" />
@@ -20,12 +19,9 @@
     />
   </head>
 
-  <!-- Comienzo a crear    ENCABEZADOS aquí -->
   <body>
     <div class="page">
-      <!-- Creamos el bloque HEADER (Encabezado de la pagina-->
       <header class="header">
-        <!-- Creamos el bloque NAV de (navegacion de la pagina)-->
         <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
@@ -43,8 +39,6 @@
           </div>
         </nav>
 
-        <!-- Aqui empezamos a crear el bloque HEADER_CONTEN (contenido de del Encabezado) #5 AL 8-->
-
         <h1 class="header__title">
           <span class="span-accent">Café de especialidad</span> en Triple Peaks
         </h1>
@@ -60,7 +54,6 @@
           class="header__image"
         />
 
-        <!-- Aqui empezamos a crear el bloque HEADER_FOOTER (contenido de del  FOOTER) #8 Y 9-->
         <div class="header__footer">
           <div class="header__footer-informations">
             <p class="header__paragraph">Horario</p>
@@ -77,13 +70,10 @@
         </div>
       </header>
 
-      <!-- Aqui empezamos a crear el bloque MAIN (seccion resetas) #1,2-->
       <main class="content">
         <section class="recipes" id="recipes">
-          <!-- Bloque #1 titulo-->
           <div class="recipes__title"><h2>Recetas</h2></div>
 
-          <!-- Bloque #2 Subtitulos-->
           <div class="recipes__subtitle">
             <p>
               Echa un vistazo a las recetas que hemos reunido para que elabores
@@ -91,9 +81,7 @@
             </p>
           </div>
 
-          <!-- Bloque #3 RECIPIENTES VIDEOS -->
           <div class="recipes__videos">
-            <!-- Aqui se agrega contenidos del recipiente Videos (etiquetas  iframes de videos de Youtube  (bloque 4 y 5)-->
             <div>
               <iframe
                 class="recipes__iframe"
@@ -126,16 +114,10 @@
           </div>
         </section>
 
-        <!-- SECCION_3 RESERVACION-->
         <section class="reservation" id="reservation">
-          <!--   1.   BLOQUE: reservation ELEMENTO: title (Resevar una Mesa)-->
-          <!--   Codigo para Titulo (Elemento Title)-->
           <div class="reservation__title">
             <h2>Reservar una mesa</h2>
           </div>
-
-          <!-- 2. BLOQUE: Reservation ELEMENTO: Form (formulario)-->
-          <!--  aqui enpiezo codigo para  campo entrada formularios-->
 
           <form class="reservation__form form">
             <fieldset class="form__fieldset">
